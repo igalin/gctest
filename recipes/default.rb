@@ -45,6 +45,6 @@ end
 
 
 # download Goolge Logo and save under /root/logo.png
-  require 'open-uri'
+require 'open-uri'
   download = open('http://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png')
   IO.copy_stream(download, '/root/logo.png')
